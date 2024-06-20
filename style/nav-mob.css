@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    z-index: 998;
+}
+.pre {
+    height: 91vh;
+}
+.logo {
+    display: flex;
+    place-items: center;
+    cursor: pointer;
+}
+#logo {
+    font: normal normal 1.3em 'Ablation', arial, sans-serif;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.nav div {
+    background: #fff;
+    width: 1px;
+    margin: 4px;
+}
+/* menu */
+.l1 {
+    height: 20px;
+}
+.l2 {
+    height: 25px;
+}
+.l3 {
+    height: 27px;
+}
+.l4 {
+    height: 25px;
+}
+.l5 {
+    height: 20px;
+}
+.link{
+    position: relative;
+    left: 100%;
+    display: flex;
+    font-size: 1em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.link:hover {
+    opacity: 0.7;
+}
+.in {
+    background: #05000ee3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 91vh;
+    list-style: none;
+    transform: translateX(100%);
+
+    position: absolute;
+    top: 9vh;
+    right: 0;
+
+    z-index: 999;
+}
+/* ativação do menu */
+.in.active {
+    animation-name: slide;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@-moz-keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@-o-keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@-webkit-keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* desativação */
+.in.dea {
+    animation-name: dea;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes dea {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@-moz-keyframes dea {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+@-o-keyframes dea {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+@-webkit-keyframes dea {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+/* animação do icone de menu */
+.nav.active .l1, .nav.active .l5 {
+    animation-name: lines1;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.nav.active .l2, .nav.active .l4 {
+    animation-name: lines2;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: .3s;
+}
+.nav.active .l3 {
+    animation-name: cent;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: .1s;
+}
+
+@keyframes lines1 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-moz-keyframes lines1 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-o-keyframes lines1 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-webkit-keyframes lines1 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@keyframes cent {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-moz-keyframes cent {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-o-keyframes cent {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-webkit-keyframes cent {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@keyframes lines2 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-moz-keyframes lines2 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-o-keyframes lines2 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+@-webkit-keyframes lines2 {
+    0% {
+        height: 25px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 27px;
+    }
+}
+
+.nk1.active{
+    animation-name: lin;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+.nk2.active{
+    animation-name: lin;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+.nk3.active{
+    animation-name: lin;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+.nk4.active{
+    animation-name: lin;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-delay: .4s;
+}
+@keyframes lin {
+    to {
+        left: 0;
+    }
+}
+@-moz-keyframes lin {
+    to {
+        left: 0;
+    }
+}
+@-o-keyframes lin {
+    to {
+        left: 0;
+    }
+}
+@-webkit-keyframes lin {
+    to {
+        left: 0;
+    }
+}
