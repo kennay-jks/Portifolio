@@ -6,8 +6,8 @@
     font-weight: normal;
 }
 :root {
-    --color1: #05000e;
-    --color2: #E3DBDB;
+    --color1: #080808;
+    --color2: #d6d6d6;
     --color3: #ED1C24;
     --color4: #FFC001;
 }
@@ -17,7 +17,7 @@
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
-    color: #fff;
+    color: #080808;
 }
 html {
     scrollbar-width: none;
@@ -26,64 +26,26 @@ html {
     display: none;
 }
 body {
-    background: #0a001d url('../image/art.jpg') center no-repeat fixed ;
+    background: #d6d6d6;
+}
+.pre {
+    background: #0a001d url('../image/art2.png') center no-repeat fixed ;
     background-size: cover;
-    backdrop-filter: blur(5px);
-}
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background: #629e009a;
-    width: 100vw;
-    height: 9vh;
-    z-index: 999;
-}
-.logo {
-    display: flex;
-    place-items: center;
-    cursor: pointer;
-    transition: .3s;
+    height: 100vh;
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: #080808;
     transition: .3s;
     letter-spacing: 3px;
 }
-.link, .cim {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    padding: 0px 2px;
+#logo {
+    width: 150px;
 }
-.link::before, .cim::before {
-    content: '';
+.logo {
     position: absolute;
-    left: 0;
-    top: -2px;
-    width: 0px;
-    height: 3px;
-    background: var(--color4);
-    transition: width 0.3s;
-}
-.link::after, .cim::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0px;
-    height: 3px;
-    background: var(--color4);
-    transition: width 0.3s;
-}
-.link:hover::after, .link:hover::before, .cim:hover::after, .cim:hover::before {
-    width: 100%;
-}
-.logo:hover {
-    opacity: 0.7;
+    top: 0;
+    left: 80vw;
 }
 section{
     display: flex;
@@ -96,169 +58,115 @@ section{
     height: 100vh;
 }
 /* seções */
-.con {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    max-width: 900px;
-    min-height: 500px;
-    padding: 50px;
-}
 .env-present {
     padding-right: 300px;
 }
 .env-present h1 {
     font-size: 2.8em;
-    text-shadow: 2px 2px 3px #00000071;
 }
 .env-present p {
     font-size: 1.2em;
-    text-shadow: 2px 2px 3px #00000071;
+}
+.present {
+    transition: .4s;
+}
+.present h1, .present p {
+    color: #d6d6d6;
 }
 .present:hover {
     transform: scale(1.1);
-    transition: .4s;
     width: auto;
     height: auto;
 }
 ::selection{
-    background: var(--color2);
-    color: var(--color1);
-}
-.down {
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff8f;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0px auto;
-    transition: .1s;
-}
-.down:hover {
-    transform: scale(1.1);
-}
-.seta {
-    background: #121d00;
-    width: 1px;
-    height: 20px;
-    margin: auto;
-}
-.s1 {
-    transform: rotate(-45deg);
-    margin-right: 6px;
-}
-.s2 {
-    transform: rotate(45deg);
-    margin-left: 6px;
-}
-/* botão flutuante */
-.down.float {
-    animation: float 1.5s linear infinite forwards;
-}
-@keyframes float {
-    0% {
-        top: 0px;
-    }
-    50% {
-        top: -8px;
-    }
-    100% {
-        top: 0px;
-    }
-}
-@-moz-keyframes float {
-    0% {
-        top: 0px;
-    }
-    50% {
-        top: -8px;
-    }
-    100% {
-        top: 0px;
-    }
-}
-@-webkit-keyframes float {
-    0% {
-        top: 0px;
-    }
-    50% {
-        top: -8px;
-    }
-    100% {
-        top: 0px;
-    }
-}
-@-o-keyframes float {
-    0% {
-        top: 0px;
-    }
-    50% {
-        top: -8px;
-    }
-    100% {
-        top: 0px;
-    }
-}
-/* botão para subir */
-.up {
-    display: flex;
-    width: 100%;
-    padding-left: 5vw;
-}
-/* ultimo botão para subir */
-.last {
-    justify-content: center;
-    align-items: center;
-}
-.up a {
-    text-shadow: 2px 2px 3px #000;
+    background: var(--color1);
     color: var(--color2);
-    text-decoration: underline;
-}
-.Projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-/* local dos projetos */
-.item {
-    background: #e3dbdbcb;
-    width: 230px;
-    height: 180px;
-    border-radius: 5px;
-    transition: .3s;
-    cursor: pointer;
-    overflow: hidden;
-}
-/* descrição dos projetos */
-.desc {
-    position: relative;
-    background: #0a001d7e;
-    content: 100%;
-    width: 100%;
-    height: 50%;
-    transform: translateY(200%);
-    transition: .3s;
-}
-.item:hover {
-    transform: scale(1.1);
-}
-.item:hover .desc {
-    transform: translateY(100%);
 }
 #iam {
     font-size: 1.2em;
-    text-shadow: -2px -1px 2px #00000088;
     letter-spacing: 1px;
+    max-width: 800px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    padding: 50px;
+    overflow: hidden;
+}
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    padding: 50px;
+    overflow: hidden;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    padding: 0px 0px;
+    overflow: hidden;
+}
+/* local dos projetos */
+.item {
+    background: #e3dbdbcb url(../image/art2.png) center no-repeat ;
+    background-size: cover;
+    width: 33.33%;
+    height: 350px;
+    transition: .3s;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+/* .item:hover {
+    transform: scale(1.1);
+    z-index: 2;
+} */
+/* descrição dos projetos */
+.desc {
+    position: relative;
+    background: #080808cb;
+    content: 100%;
+    width: 100%;
+    height: 50%;
+    padding: 20px 30px;
+    transform: translateY(200%);
+    transition: .3s;
+}
+.desc h2 {
+    font-size: 2em;
+    color: var(--color2);
+    width: 100%;
+   text-align: center;
+   margin-bottom: 5px;
+}
+.desc p{
+    font-size: 1em;
+    color: var(--color2);
+}
+.item:hover .desc {
+    transform: translateY(100%);
 }
 .skill {
     display: flex;
@@ -266,85 +174,40 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    margin-bottom: 30px;
+}
+.skill .title {
+    margin: 0;
+}
+.env-skill1, .env-skill2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+    width: auto;
+    height: 400px;
+    margin: 0px 80px;
 }
 .skills {
-    background: #e3dbdbc5;
+    max-width: 300px;
+    padding: 10px;
+    overflow: hidden;
+    padding: 0;
+}
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    padding: 8px;
-    transition: .3s;
-    box-shadow: 3px 3px 5px #0000007c;
-    border-radius: 15px 0px;
+    background: #080808;
+    width: 100vw;
+    height: 8vh;
 }
-.skills p {
+footer p {
+    color: #d6d6d6;
+}
+footer p::selection {
+    background: var(--color2);
     color: var(--color1);
-}
-.skills img {
-    width: 70px;
-}
-.skills:hover {
-    border-radius: 0px 15px;
-    transform: scale(1.2);
-}
-.thor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-.prefer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background: #05000ee8;
-    margin: 30px;
-    border-radius: 10px;
-}
-.prefer, .thor {
-    max-width: 900px;
-}
-.env, .brev {
-    max-width: 450px;
-}
-#intp {
-    width: auto;
-}
-.prefer form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-input, select {
-    background: none;
-    border: none;
-    border-bottom: 1px solid var(--color4);
-    padding: 5px;
-    width: 250px;
-    outline: none;
-    font-size: 1em;
-}
-#sub {
-    border: 1px solid var(--color4);
-    border-radius: 20px;
-    cursor: pointer;
-    width: 100px;
-}
-select {
-    background: var(--color1);
-    border: 1px solid var(--color4);
-    cursor: pointer;
-}
-textarea {
-    background: var(--color1);
-    border: 1px solid var(--color4);
-    padding: 5px;
 }
