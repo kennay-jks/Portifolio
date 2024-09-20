@@ -39,6 +39,13 @@ a {
     transition: .3s;
     letter-spacing: 3px;
 }
+.logo2 {
+    width: auto;
+    margin-right: 30px;
+}
+#logo2 {
+    width: 200px;
+}
 #logo {
     width: 150px;
 }
@@ -57,6 +64,88 @@ section{
     margin: auto;
     height: 100vh;
 }
+.down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    right: 5%;
+    width: auto;
+    height: auto;
+    margin-top: 70vh;
+    transition: .1s;
+}
+.down img {
+    width: 70px;
+    height: 70px;
+}
+.down:hover {
+    transform: scale(1.1);
+}
+.seta {
+    background: #121d00;
+    width: 1px;
+    height: 20px;
+    margin: auto;
+}
+.s1 {
+    transform: rotate(-45deg);
+    margin-right: 6px;
+}
+.s2 {
+    transform: rotate(45deg);
+    margin-left: 6px;
+}
+/* botão flutuante */
+.down.float {
+    animation: float 1.5s linear infinite forwards;
+}
+@keyframes float {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -8px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-moz-keyframes float {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -8px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-webkit-keyframes float {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -8px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-o-keyframes float {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -8px;
+    }
+    100% {
+        top: 0px;
+    }
+}
 /* seções */
 .env-present {
     padding-right: 300px;
@@ -68,6 +157,10 @@ section{
     font-size: 1.2em;
 }
 .present {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     transition: .4s;
 }
 .present h1, .present p {
@@ -83,7 +176,7 @@ section{
     color: var(--color2);
 }
 #iam {
-    font-size: 1.2em;
+    font-size: 1.32em;
     letter-spacing: 1px;
     max-width: 800px;
 }
@@ -92,7 +185,7 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 2em;
+    font-size: 2.13em;
     margin-bottom: 50px;
 }
 .about {
@@ -194,6 +287,9 @@ section{
     padding: 10px;
     overflow: hidden;
     padding: 0;
+}
+.skills p {
+    font-size: 1.3em;
 }
 footer {
     display: flex;
