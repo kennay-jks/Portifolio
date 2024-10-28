@@ -136,6 +136,7 @@ section{
     overflow: hidden;
 }
 .projects {
+    background: var(--color1);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,6 +146,13 @@ section{
     height: auto;
     padding: 0px 0px;
     overflow: hidden;
+}
+.tp {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.white {
+    color: var(--color2);
 }
 /* local dos projetos */
 .item {
@@ -156,6 +164,22 @@ section{
     cursor: pointer;
     overflow: hidden;
     z-index: 1;
+}
+.cat {
+    background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
+    background-size: cover;
+}
+.mihail {
+    background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
+    background-size: cover;
+}
+.after-the-end {
+    background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
+    background-size: cover;
+}
+.indra {
+    background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
+    background-size: cover;
 }
 .desc {
     position: relative;
@@ -361,6 +385,22 @@ footer p::selection {
         overflow: hidden;
         z-index: 1;
     }
+    .cat {
+        background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
+        background-size: cover;
+    }
+    .mihail {
+        background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
+        background-size: cover;
+    }
+    .after-the-end {
+        background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
+        background-size: cover;
+    }
+    .indra {
+        background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
+        background-size: cover;
+    }
     .desc {
         position: relative;
         background: #080808cb;
@@ -466,7 +506,6 @@ footer p::selection {
     .item {
         width: 100%;
     }
-
     .env-skill1, .env-skill2 {
         display: flex;
         flex-direction: column;
@@ -533,6 +572,22 @@ footer p::selection {
         cursor: pointer;
         overflow: hidden;
         z-index: 1;
+    }
+    .cat {
+        background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
+        background-size: cover;
+    }
+    .mihail {
+        background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
+        background-size: cover;
+    }
+    .after-the-end {
+        background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
+        background-size: cover;
+    }
+    .indra {
+        background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
+        background-size: cover;
     }
     .desc {
         position: relative;
@@ -675,6 +730,22 @@ footer p::selection {
         cursor: pointer;
         overflow: hidden;
         z-index: 1;
+    }
+    .cat {
+        background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
+        background-size: cover;
+    }
+    .mihail {
+        background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
+        background-size: cover;
+    }
+    .after-the-end {
+        background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
+        background-size: cover;
+    }
+    .indra {
+        background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
+        background-size: cover;
     }
     .desc {
         position: relative;
