@@ -181,6 +181,14 @@ section{
     background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
     background-size: cover;
 }
+.heine {
+    background: #e3dbdbcb url(../image/heineken.png) center no-repeat;
+    background-size: cover;
+}
+.hak {
+    background: #e3dbdbcb url(../image/HAK-card-v2.png) center no-repeat;
+    background-size: cover;
+}
 .desc {
     position: relative;
     background: #080808cb;
@@ -401,6 +409,14 @@ footer p::selection {
         background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
         background-size: cover;
     }
+    .heine {
+        background: #e3dbdbcb url(../image/heineken.png) center bottom no-repeat;
+        background-size: cover;
+    }
+    .hak {
+        background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
+        background-size: cover;
+    }
     .desc {
         position: relative;
         background: #080808cb;
@@ -589,6 +605,14 @@ footer p::selection {
         background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
         background-size: cover;
     }
+    .heine {
+        background: #e3dbdbcb url(../image/heineken.png) center bottom no-repeat;
+        background-size: cover;
+    }
+    .hak {
+        background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
+        background-size: cover;
+    }
     .desc {
         position: relative;
         background: #080808cb;
@@ -745,6 +769,14 @@ footer p::selection {
     }
     .indra {
         background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
+        background-size: cover;
+    }
+    .heine {
+        background: #e3dbdbcb url(../image/heineken.png) center bottom no-repeat;
+        background-size: cover;
+    }
+    .hak {
+        background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
         background-size: cover;
     }
     .desc {
