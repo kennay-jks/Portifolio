@@ -189,6 +189,18 @@ section{
     background: #e3dbdbcb url(../image/HAK-card-v2.png) center no-repeat;
     background-size: cover;
 }
+.jumper {
+    background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
+    background-size: cover;
+}
+.portfolio {
+    background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
+    background-size: cover;
+}
+.naufrago {
+    background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
+    background-size: cover;
+}
 .desc {
     position: relative;
     background: #080808cb;
@@ -417,6 +429,18 @@ footer p::selection {
         background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
         background-size: cover;
     }
+    .jumper {
+        background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
+        background-size: cover;
+    }
+    .portfolio {
+        background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
+        background-size: cover;
+    }
+    .naufrago {
+        background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
+        background-size: cover;
+    }
     .desc {
         position: relative;
         background: #080808cb;
@@ -613,6 +637,18 @@ footer p::selection {
         background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
         background-size: cover;
     }
+    .jumper {
+        background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
+        background-size: cover;
+    }
+    .portfolio {
+        background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
+        background-size: cover;
+    }
+    .naufrago {
+        background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
+        background-size: cover;
+    }
     .desc {
         position: relative;
         background: #080808cb;
@@ -777,6 +813,18 @@ footer p::selection {
     }
     .hak {
         background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
+        background-size: cover;
+    }
+    .jumper {
+        background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
+        background-size: cover;
+    }
+    .portfolio {
+        background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
+        background-size: cover;
+    }
+    .naufrago {
+        background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
         background-size: cover;
     }
     .desc {
