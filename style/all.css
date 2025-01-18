@@ -261,6 +261,18 @@ footer p::selection {
     .abo {
         height: auto;
     }
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 90%;
+        height: 100%;
+        padding: 35px;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
     .about {
         display: flex;
         flex-direction: column;
