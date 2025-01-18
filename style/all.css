@@ -1,24 +1,25 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "ArgentumSans";
-    src: url("../font/ArgentumSans-Regular.ttf"); /* para IE */
-    src: local("ArgentumSans"), url("../font/ArgentumSans-Regular.ttf") format("truetype");
+    font-family: "Hansief";
+    src: url("../font/Hansief.otf"); /* para IE */
+    src: local("Hansief"), url("../font/Hansief.otf") format("opentype");
 }
 :root {
     --color1: #080808;
     --color2: #d6d6d6;
     --color3: #e2e2e2;
-    --color4: #FFC001;
+    --color4: #100e14da;
 }
 * {
-    font-family: "ArgentumSans", Arial, Helvetica, sans-serif;
+    font-family: "Hansief", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
-    color: #080808;
+    color: var(--color2);
     transition: .2s;
+    text-transform: uppercase;
 }
 html {
     scrollbar-width: none;
@@ -27,25 +28,18 @@ html {
     display: none;
 }
 body {
-    background: #d6d6d6;
-}
-.pre {
-    background: #0a001d url('../image/art2.png') center no-repeat fixed ;
+    background: #0a001d url('../image/Mockup\ realmente\ sem\ ruido2.png') center no-repeat fixed ;
     background-size: cover;
-    height: 100vh;
 }
 a {
     text-decoration: none;
-    color: #080808;
+    color: var(--color1);
     transition: .3s;
     letter-spacing: 3px;
 }
 .logo2 {
     width: auto;
-    margin-right: 30px;
-}
-#logo2 {
-    width: 220px;
+    height: auto;
 }
 section{
     display: flex;
@@ -57,46 +51,21 @@ section{
     margin: auto;
     height: auto;
 }
-.abo {
-    background: var(--color3);
-    height: 100vh;
-}
 /* seções */
 .env-present {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    padding: 100px;
-    overflow: hidden;
-}
-.env-present h1 {
-    font-size: 2.8em;
-}
-.env-present p {
-    font-size: 1.4em;
-}
-.present {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    transition: .4s;
-}
-.present h1, .present p {
-    color: var(--color2);
-}
-.present:hover {
-    transform: scale(1.1);
-    width: auto;
-    height: auto;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--color4);
 }
 ::selection{
-    background: var(--color1);
-    color: var(--color2);
+    background: var(--color2);
+    color: var(--color1);
 }
 .iam {
     font-size: 1.2em;
@@ -106,204 +75,75 @@ section{
 }
 .title {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
     font-size: 2.13em;
     margin-bottom: 30px;
 }
+.image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.img {
+    width: 50%;
+    height: 50%;
+}
+.img:hover {
+    scale: .9;
+}
+.abo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color4);
+    height: 100vh;
+    padding: 0px 90px;
+    overflow: hidden;
+}
 .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90%;
+    align-items: start;
+    flex-wrap: nowrap;
+    width: 60%;
     height: 100%;
     padding: 50px;
+    padding-right: 70px;
     padding-bottom: 70px;
     overflow: hidden;
 }
-.con {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 90%;
-    height: 100%;
-    padding: 50px;
-    overflow: hidden;
-}
-.projects {
-    background: var(--color1);
+.kill {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: auto;
-    padding: 0px 0px;
+    background: var(--color4);
+    height: 100vh;
+    padding: 0px 90px;
     overflow: hidden;
-}
-.tp {
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.white {
-    color: var(--color2);
-}
-/* local dos projetos */
-.item {
-    background: #e3dbdbcb url(../image/art2.png) center no-repeat ;
-    background-size: cover;
-    width: 33.33%;
-    height: 350px;
-    transition: .3s;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 1;
-}
-.cat {
-    background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
-    background-size: cover;
-}
-.mihail {
-    background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
-    background-size: cover;
-}
-.after-the-end {
-    background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
-    background-size: cover;
-}
-.indra {
-    background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
-    background-size: cover;
-}
-.heine {
-    background: #e3dbdbcb url(../image/heineken.png) center no-repeat;
-    background-size: cover;
-}
-.hak {
-    background: #e3dbdbcb url(../image/HAK-card-v2.png) center no-repeat;
-    background-size: cover;
-}
-.jumper {
-    background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
-    background-size: cover;
-}
-.portfolio {
-    background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
-    background-size: cover;
-}
-.naufrago {
-    background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
-    background-size: cover;
-}
-.desc {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #080808cb;
-    content: 100%;
-    width: 100%;
-    height: 100%;
-    padding: 20px 40px;
-    overflow: hidden;
-    transform: translateY(100%);
-    transition: .3s;
-}
-.desc h2 {
-    font-size: 2em;
-    color: var(--color2);
-    width: 100%;
-   text-align: center;
-   margin-bottom: 5px;
-}
-.desc p{
-    font-size: 1.1em;
-    color: var(--color2);
-}
-.item:hover .desc {
-    transform: translateY(0%);
-}
-.kill {
-    height: auto;
-    padding-top: 30px;
 }
 .skill {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-}
-.skill .title {
-    margin: 0;
-}
-.env-skill1, .env-skill2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    gap: 100px;
-    width: auto;
-    height: auto;
-    margin: 0px 80px;
-}
-.env-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: auto;
-}
-.line {
-    width: 0%;
-    height: 3px;
-    background: var(--color1);
-    transition: .2s;
-}
-.skills:hover .line {
-    width: 100%;
-}
-.env-skill-all {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-}
-.skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 400px;
-    padding: 10px;
+    width: 60%;
+    height: 100%;
+    padding: 50px;
+    padding-left: 70px;
+    padding-bottom: 70px;
     overflow: hidden;
-    padding: 0;
-    height: 300px;
-}
-.skills h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-.skills p {
-    font-size: 1.2em;
-    text-align: center;
-}
-.skills img {
-    width: 100px;
-    transition: .1s;
 }
 footer {
     display: flex;
@@ -321,44 +161,62 @@ footer p::selection {
     background: var(--color2);
     color: var(--color1);
 }
-@media (max-width: 1024px) {
-    .present {
+@media (max-width: 1157px) {
+    .image {
+        display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-    }
-    .abo {
-        height: auto;
-    }
-    .item {
         width: 100%;
         height: auto;
-    }
-
-    .env-present {
-        width: 90%;
-        height: 100%;
-        padding: 30px;
         overflow: hidden;
+        border-radius: 0px;
     }
-    .env-present h1 {
-        font-size: 2.4em;
+    .img {
+        width: 25%;
+        height: 10%;
     }
-    .env-present p {
-        font-size: 1.1em;
+    .abo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background: var(--color4);
+        height: auto;
+        padding: 0px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 90%;
+        height: 100vh;
+    }
+    .kill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background: var(--color4);
+        height: auto;
+        padding: 0px;
+    }
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 90%;
+        height: 100vh;
     }
     .logo2 {
         width: auto;
-        margin-right: 30px;
-    }
-    #logo2 {
-        width: 190px;
-    }
-    .env-present h1 {
-        font-size: 2.5em;
-    }
-    .env-present p {
-        font-size: 1.2em;
     }
     .iam {
         font-size: 1.2em;
@@ -368,140 +226,37 @@ footer p::selection {
     }
     .title {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         width: 100%;
         font-size: 2em;
         margin-bottom: 10px;
     }
-    .env-skill1, .env-skill2 {
-        margin: 0px;
-        padding: 10px;
-        align-items: baseline;
-    }
-    .skills h2 {
-        font-size: 1.5em;
-        margin-bottom: 15px;
-    }
-    .skills p {
-        font-size: 1em;
-        text-align: center;
-    }
-    .projects {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: auto;
-        padding: 0px 0px;
-        overflow: hidden;
-    }
-    /* local dos projetos */
-    .item {
-        background: #e3dbdbcb url(../image/art2.png) center no-repeat ;
-        background-size: cover;
-        width: 33.33%;
-        height: 230px;
-        transition: .3s;
-        cursor: pointer;
-        overflow: hidden;
-        z-index: 1;
-    }
-    .cat {
-        background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
-        background-size: cover;
-    }
-    .mihail {
-        background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
-        background-size: cover;
-    }
-    .after-the-end {
-        background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
-        background-size: cover;
-    }
-    .indra {
-        background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .heine {
-        background: #e3dbdbcb url(../image/heineken.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .hak {
-        background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .jumper {
-        background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
-        background-size: cover;
-    }
-    .portfolio {
-        background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
-        background-size: cover;
-    }
-    .naufrago {
-        background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
-        background-size: cover;
-    }
-    .desc h2 {
-        font-size: 1.3em;
-        color: var(--color2);
-        width: 100%;
-       text-align: center;
-       margin-bottom: 5px;
-    }
-    .desc p{
-        font-size: .7em;
-        color: var(--color2);
-    }
 }
 
-@media (max-width: 770px) {
-    .env-present h1 {
-        font-size: 2em;
+@media (max-width: 700px) {
+    .title {
+        justify-content: start;
+        font-size: 1.5em;
     }
-
-    .env-present p {
-        font-size: 1.2em;
+    .image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+    .img {
+        width: 50%;
+        height: 10%;
     }
     .logo2 {
-        margin: 0;
-    }
-    #logo2 {
-        width: 150px;
-    }
-    /* seções */
-    .env-present {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        padding: 100px;
-        overflow: hidden;
-    }
-    .env-present h1 {
-        font-size: 1.7em;
-    }
-    .env-present p {
-        font-size: 1.1em;
-    }
-    .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .present {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .4s;
+        max-width: 350px;
+        height: auto;
     }
     .abo {
         height: auto;
@@ -523,295 +278,5 @@ footer p::selection {
         letter-spacing: 2px;
         max-width: 800px;
         margin: 10px 0px;
-    }
-    .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        font-size: 1.8em;
-        margin-bottom: 10px;
-        overflow: hidden;
-    }
-    .item {
-        width: 100%;
-    }
-    .env-skill1, .env-skill2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 50px;
-        width: 100%;
-        height: auto;
-        margin: 0px ;
-        padding: 0px 50px;
-    }
-    .env-skill-all {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        width: 100%;
-        height: auto;
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-    .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 10px;
-        overflow: hidden;
-        padding: 0;
-        height: auto;
-    }
-    .skills h2 {
-        font-size: 1.7em;
-        margin-bottom: 15px;
-    }
-    .skills p {
-        font-size: 1.1em;
-        text-align: center;
-    }
-    .skills img {
-        width: 80px;
-    }
-    .projects {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: auto;
-        padding: 0px 0px;
-        overflow: hidden;
-    }
-    /* local dos projetos */
-    .item {
-        background: #e3dbdbcb url(../image/art2.png) center no-repeat ;
-        background-size: cover;
-        width: 50%;
-        height: 250px;
-        transition: .3s;
-        cursor: pointer;
-        overflow: hidden;
-        z-index: 1;
-    }
-    .cat {
-        background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
-        background-size: cover;
-    }
-    .mihail {
-        background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
-        background-size: cover;
-    }
-    .after-the-end {
-        background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
-        background-size: cover;
-    }
-    .indra {
-        background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .heine {
-        background: #e3dbdbcb url(../image/heineken.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .hak {
-        background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .jumper {
-        background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
-        background-size: cover;
-    }
-    .portfolio {
-        background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
-        background-size: cover;
-    }
-    .naufrago {
-        background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
-        background-size: cover;
-    }
-    .desc h2 {
-        font-size: 1.5em;
-        color: var(--color2);
-        width: 100%;
-       text-align: center;
-       margin-bottom: 5px;
-    }
-    .desc p{
-        font-size: .9em;
-        color: var(--color2);
-    }
-}
-
-@media (max-width: 480px) {
-    .env-present h1 {
-        font-size: 1.5em;
-    }
-
-    .env-present p {
-        font-size: 1em;
-    }
-    .logo2 {
-        margin: 0;
-    }
-    #logo2 {
-        width: 150px;
-    }
-    /* seções */
-    .env-present {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        padding: 30px;
-        overflow: hidden;
-    }
-    .env-present h1 {
-        font-size: 1.5em;
-    }
-    .env-present p {
-        font-size: 1.2em;
-    }
-    .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .present {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .4s;
-    }
-    .env-skill1, .env-skill2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 50px;
-        width: 100%;
-        height: auto;
-        margin: 0px ;
-        padding: 0px 30px;
-    }
-    .skill {
-        width: 100%;
-    }
-    .env-skill-all {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        width: 100%;
-        height: auto;
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-    .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 10px;
-        overflow: hidden;
-        padding: 0;
-        height: auto;
-    }
-    .skills h2 {
-        font-size: 1.7em;
-        margin-bottom: 15px;
-    }
-    .skills p {
-        font-size: 1.1em;
-        text-align: center;
-    }
-    .skills img {
-        width: 80px;
-    }
-    .projects {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: auto;
-        padding: 0px 0px;
-        overflow: hidden;
-    }
-    /* local dos projetos */
-    .item {
-        background: #e3dbdbcb url(../image/art2.png) center no-repeat ;
-        background-size: cover;
-        width: 100%;
-        height: 300px;
-        transition: .3s;
-        cursor: pointer;
-        overflow: hidden;
-        z-index: 1;
-    }
-    .cat {
-        background: #e3dbdbcb url(../image/coffee-cat-ex2.png) center no-repeat ;
-        background-size: cover;
-    }
-    .mihail {
-        background: #e3dbdbcb url(../image/mihail-mockup.png) center no-repeat;
-        background-size: cover;
-    }
-    .after-the-end {
-        background: #e3dbdbcb url(../image/after-the-end-m4.png) center no-repeat;
-        background-size: cover;
-    }
-    .indra {
-        background: #e3dbdbcb url(../image/indra-m1.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .heine {
-        background: #e3dbdbcb url(../image/heineken.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .hak {
-        background: #e3dbdbcb url(../image/HAK-card-v2.png) center bottom no-repeat;
-        background-size: cover;
-    }
-    .jumper {
-        background: #e3dbdbcb url(../image/jumper-mk.png) center no-repeat;
-        background-size: cover;
-    }
-    .portfolio {
-        background: #e3dbdbcb url(../image/portifolio-v1.png) center no-repeat;
-        background-size: cover;
-    }
-    .naufrago {
-        background: #e3dbdbcb url(../image/naufrago-mk-v2.png) center no-repeat;
-        background-size: cover;
-    }
-    .desc h2 {
-        font-size: 1.7em;
-        color: var(--color2);
-        width: 100%;
-       text-align: center;
-       margin-bottom: 5px;
-    }
-    .desc p{
-        font-size: .9em;
-        color: var(--color2);
     }
 }
