@@ -10,6 +10,7 @@
     --color2: #e0e0e0;
     --color3: #a61c3c;
     --color4: #0a0a0af1;
+    --color5: #051f2e;
 }
 * {
     font-family: "Hansief", Arial, Helvetica, sans-serif;
@@ -40,6 +41,29 @@ a {
     transition: .3s;
     letter-spacing: 3px;
 }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background: var(--color1);
+    padding: 10px 6%;
+    padding-top: 15px;
+}
+.logo {
+    height: 49px;
+    width: 140px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--color4);
+}
 section{
     display: flex;
     flex-direction: column;
@@ -49,60 +73,6 @@ section{
     width: 100vw;
     margin: auto;
     height: auto;
-}
-/* seções */
-.env-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-.env-redes {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: var(--color4);
-    width: 100vw;
-    height: auto;
-    padding: 2vw;
-    padding-top: 0;
-}
-.env-social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: auto;
-    height: auto;
-}
-.social {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    padding: 13px;
-    border-radius: 10%;
-    box-shadow: 7px 7px 0px var(--color3);
-    border: 2px solid var(--color3);
-    background: var(--color1);
-    width: 65px;
-    height: 65px;
-    margin: 10px;
-    transition: .3s;
-}
-.social:hover {
-    border-radius: 100%;
-    box-shadow: 0px 0px 0px var(--color1);
-    border: 2px solid var(--color3);
-    background: var(--color1);
-}
-.social img {
-    width: 100%;
-    height: 100%;
 }
 ::selection{
     background: var(--color2);
@@ -146,7 +116,7 @@ section{
     justify-content: space-between;
     align-items: center;
     background: var(--color4);
-    height: 100vh;
+    height: auto;
     padding: 0px 90px;
     overflow: hidden;
 }
@@ -163,16 +133,6 @@ section{
     padding-bottom: 70px;
     overflow: hidden;
 }
-.kill {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--color4);
-    height: 100vh;
-    padding: 0px 90px;
-    overflow: hidden;
-}
 .skill {
     display: flex;
     flex-direction: column;
@@ -185,6 +145,20 @@ section{
     padding-left: 70px;
     padding-bottom: 70px;
     overflow: hidden;
+}
+.port-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    background: var(--color4);
+}
+.port-img img {
+    height: 25%;
+    width: 25%;
 }
 footer {
     display: flex;
@@ -237,16 +211,6 @@ footer p::selection {
         width: 90%;
         height: 100vh;
     }
-    .kill {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        background: var(--color4);
-        height: auto;
-        padding: 0px;
-    }
     .skill {
         display: flex;
         flex-direction: column;
@@ -255,9 +219,6 @@ footer p::selection {
         flex-wrap: nowrap;
         width: 90%;
         height: 100vh;
-    }
-    .logo2 {
-        width: auto;
     }
     .iam {
         font-size: 1.2em;
@@ -280,11 +241,6 @@ footer p::selection {
         background: #0a0a0a url('../image/fundo/Mockup4.jpg') center no-repeat fixed ;
         background-size: cover;
     }
-    .social {
-        padding: 9px;
-        width: 45px;
-        height: 45px;
-    }
     .title {
         justify-content: start;
         font-size: 1.5em;
@@ -303,10 +259,6 @@ footer p::selection {
     .img {
         width: 50%;
         height: 10%;
-    }
-    .logo2 {
-        max-width: 350px;
-        height: auto;
     }
     .abo {
         height: auto;
