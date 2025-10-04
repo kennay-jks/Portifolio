@@ -44,17 +44,41 @@ a {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
     height: auto;
-    background: var(--color1);
-    padding: 10px 6%;
-    padding-top: 15px;
+    background: var(--color3);
+    padding: 5px 8%;
+    padding-top: 5px;
 }
 .logo {
     height: 49px;
     width: 140px;
+}
+.rds1 {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background: var(--color2);
+    padding: 8px;
+    border-radius: 50%;
+}
+.rds2 {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background: var(--color2);
+    padding: 8px;
+    border-radius: 50%;
+}
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    gap: 30px;
 }
 .main {
     display: flex;
@@ -156,7 +180,7 @@ section{
     width: 100vw;
     background: var(--color4);
 }
-.port-img img {
+.imgp {
     height: 25%;
     width: 25%;
 }
@@ -201,6 +225,10 @@ footer p::selection {
         background: var(--color4);
         height: auto;
         padding: 0px;
+    }
+    .imgp {
+        width: 50%;
+        height: 50%;
     }
     .about {
         display: flex;
@@ -274,6 +302,10 @@ footer p::selection {
         padding: 35px;
         padding-bottom: 50px;
         overflow: hidden;
+    }
+    .imgp {
+        width: 50%;
+        height: 50%;
     }
     .about {
         display: flex;
