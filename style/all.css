@@ -52,6 +52,9 @@ nav {
     padding: 5px 8%;
     padding-top: 5px;
 }
+.idrite {
+    display: none;
+}
 .logo {
     height: 49px;
     width: 140px;
@@ -215,6 +218,9 @@ footer p::selection {
     .img {
         width: 25%;
         height: 10%;
+    }
+    .idrite {
+        display: none;
     }
     .abo {
         display: flex;
